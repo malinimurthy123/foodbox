@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { AppComponent } from './app.component';
+
+import { environment} from './../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ProductsComponent } from './products/products.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
@@ -20,10 +22,12 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import {ChangePasswordComponent} from './admin/change-password/change-password.component';
 import { ConvertToSpacesPipe } from './search/convert-to-spaces.pipe'; // <-- Add this
 
+
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent,    
     NavBarComponent,
+    
     ProductsComponent,
     ShoppingCartComponent,
     
@@ -39,10 +43,12 @@ import { ConvertToSpacesPipe } from './search/convert-to-spaces.pipe'; // <-- Ad
     ChangePasswordComponent,
     ConvertToSpacesPipe,
   
+    
   ],
   imports: [
     BrowserModule,
     
+    FormsModule,
     AppRoutingModule,
     RouterModule.forRoot([
       {path: '', component: ProductsComponent},

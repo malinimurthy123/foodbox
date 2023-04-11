@@ -3,7 +3,6 @@ import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { SearchService } from '../search.service';
 import { UserLogin } from './userlogin';
-
 @Component({
   selector: 'app-user-login',
   templateUrl: './user-login.component.html',
@@ -33,12 +32,8 @@ export class UserLoginComponent {
       userForm.reset();
       alert("Invalid EmailId or Password");
 
-
     }
   }
   save(userForm : NgForm){
-    
-    
   }
-
 }

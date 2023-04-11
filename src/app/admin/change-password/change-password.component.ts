@@ -27,7 +27,7 @@ export class ChangePasswordComponent  {
     
     userForm.reset();
     
-    //this.proservice.changepwd(this.changepwd.password);
+    this.proservice.changepwd(this.changepwd.password);
     
   }
 
