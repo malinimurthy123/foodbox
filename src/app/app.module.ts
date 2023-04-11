@@ -8,8 +8,11 @@ import { AppComponent } from './app.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { environment} from './../environments/environment';
+import { LoginComponent } from './login/login.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
+
 
 @NgModule({
   declarations: [
