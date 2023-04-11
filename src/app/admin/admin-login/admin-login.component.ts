@@ -6,7 +6,7 @@ import { RouterModule, Route, Router} from '@angular/router';
 
 @Component({
   selector: 'app-admin-login',
-  templateUrl: './admin-login.component.html',
+  templateUrl: ./admin-AdminLoginComponent.html',
   styleUrls: ['./admin-login.component.css']
 })
 export class AdminLoginComponent implements OnInit {
