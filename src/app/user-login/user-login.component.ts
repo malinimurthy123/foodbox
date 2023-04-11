@@ -33,8 +33,12 @@ export class UserLoginComponent {
       userForm.reset();
       alert("Invalid EmailId or Password");
 
+
     }
   }
   save(userForm : NgForm){
-   }
+    
+    
+  }
+
 }

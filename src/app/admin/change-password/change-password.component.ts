@@ -2,9 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { SearchService } from 'src/app/search.service';
 import { UserLogin } from 'src/app/user-login/userlogin';
-import {AdminLoginComponent} from '../admin-login/admin-login.component';
-
 import { changePassword } from '../change-password/changepassword';
+import { adminLogin } from '../admin-login/adminlogin';
 
 @Component({
   selector: 'app-change-password',

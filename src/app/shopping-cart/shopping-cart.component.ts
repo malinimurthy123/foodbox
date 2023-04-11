@@ -13,7 +13,6 @@ export class ShoppingCartComponent implements OnInit {
   scart = new shoppingCart();
   cartTotal : number = 0;
 
-
     
   constructor(private proservice: SearchService) { 
     
