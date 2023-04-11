@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { SearchService } from 'src/app/search.service';
 import { UserLogin } from 'src/app/user-login/userlogin';
-import { adminLogin } from '../admin-login/adminlogin';
+import {AdminLoginComponent} from '../admin-login/admin-login.component';
 
 import { changePassword } from '../change-password/changepassword';
 

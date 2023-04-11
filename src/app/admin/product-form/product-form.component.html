@@ -5,7 +5,7 @@
         <form novalidate (ngSubmit) = "save(regForm)" #regForm = "ngForm">
             <div class="form-group"> 
                 <label for="productId" class="lead" style="font-family: Hey October;">Product-Id:</label>&nbsp;
-                <input [(ngModel)] = productform.productId #productIdVar = "ngModel" name="productId" id = "productId" type="number" class="form-control" required
+                <input [(ngModel)] = productForm.productId #productIdVar = "ngModel" name="productId" id = "productId" type="number" class="form-control" required
                 [ngClass] = "{'is-invalid' : (productIdVar.touched || productIdVar.dirty) && !productIdVar.valid}"/>
                 <!--Errors Checking-->
                 <span class="invalid-feedback">
