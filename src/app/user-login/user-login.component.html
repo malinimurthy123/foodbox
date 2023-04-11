@@ -7,11 +7,11 @@
         <input [(ngModel)] = userlog.emailId #EmailIdVar = "ngModel" name="emailId"  id = "emailId" type="text"  class="form-control" required
         [ngClass] = "{'is-invalid' : (EmailIdVar.touched || EmailIdVar.dirty) && !EmailIdVar.valid}" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$"/>
         <span class="invalid-feedback">
-            <span *ngIf = EmailIdVar.errors?.required>
+            <span *ngIf = EmailIdVar.errors>
                 Email-id required. 
             </span>
             <br><br>
-            <span *ngIf = EmailIdVar.errors?.pattern>
+            <span *ngIf = EmailIdVar.errors>
                 Enter a valid email.
             </span>
         </span>
@@ -21,7 +21,7 @@
         <input [(ngModel)] = userlog.password #passwordVar = "ngModel" name="password"  id = "password" type="password" minlength="8" class="form-control" required
         [ngClass] = "{'is-invalid' : (passwordVar.touched || passwordVar.dirty) && !passwordVar.valid}" />
         <span class="invalid-feedback">
-            <span *ngIf = passwordVar.errors?.required>
+            <span *ngIf = passwordVar.errors>
             Password required. 
             </span>                
         </span>

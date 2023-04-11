@@ -5,11 +5,11 @@
         <form novalidate (ngSubmit) = "save(regForm)" #regForm = "ngForm">
             <div class="form-group"> 
                 <label for="productId" class="lead" style="font-family: Hey October;">Product-Id:</label>&nbsp;
-                <input [(ngModel)] = productForm.productId #productIdVar = "ngModel" name="productId" id = "productId" type="number" class="form-control" required
+                <input [(ngModel)] = productform.productId #productIdVar = "ngModel" name="productId" id = "productId" type="number" class="form-control" required
                 [ngClass] = "{'is-invalid' : (productIdVar.touched || productIdVar.dirty) && !productIdVar.valid}"/>
                 <!--Errors Checking-->
                 <span class="invalid-feedback">
-                    <span *ngIf = productIdVar.errors?.required>
+                    <span *ngIf = productIdVar.errors>
                         Product-Id is required. 
                     </span>
                 </span>
@@ -20,10 +20,10 @@
                 <input [(ngModel)] = productform.productTitle #productTitleVar = "ngModel" name="title"  id = "title" type="text" minlength="4" class="form-control" required
                 [ngClass] = "{'is-invalid' : (productTitleVar.touched || productTitleVar.dirty) && !productTitleVar.valid}"/>
                 <span class="invalid-feedback">
-                    <span *ngIf = productTitleVar.errors?.required>
+                    <span *ngIf = productTitleVar.errors>
                         Product-Title is required. 
                     </span>
-                    <span *ngIf = productTitleVar.errors?.minlength>
+                    <span *ngIf = productTitleVar.errors>
                         Product-Title should be atleast 4 characters long.
                     </span>
                 </span>
@@ -34,7 +34,7 @@
                 [ngClass] = "{'is-invalid' : (productPriceVar.touched || productPriceVar.dirty) && !productPriceVar.valid}"/>
                 <!--Errors Checking-->
                 <span class="invalid-feedback">
-                    <span *ngIf = productPriceVar.errors?.required>
+                    <span *ngIf = productPriceVar.errors>
                         Product-Price is required. 
                     </span>
                 </span>
@@ -46,7 +46,7 @@
                     [ngClass] = "{'is-invalid' : (productCatVar.touched || productCatVar.dirty) && !productCatVar.valid}">
                 <!--Errors Checking-->
                 <span class="invalid-feedback">
-                    <span *ngIf = productCatVar.errors?.required>
+                    <span *ngIf = productCatVar.errors>
                         Product-Category has to be  selected. 
                     </span>
                 </span>
@@ -66,7 +66,7 @@
                 [ngClass] = "{'is-invalid' : (productImgVar.touched || productImgVar.dirty) && !productImgVar.valid}">
                 <!--Errors Checking-->
                 <span class="invalid-feedback">
-                    <span *ngIf = productImgVar.errors?.required>
+                    <span *ngIf = productImgVar.errors>
                         Product-Image is required.
                     </span>
                 </span>
