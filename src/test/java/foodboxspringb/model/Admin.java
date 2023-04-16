@@ -27,6 +27,8 @@ public class Admin {
     @Id
     private String username;
     private String password;
+    @jakarta.persistence.Id
+    private Long id;
 
     public Admin() {
         super();
@@ -51,4 +53,11 @@ public class Admin {
         this.password = password;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
+    }
 }
