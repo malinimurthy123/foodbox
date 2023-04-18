@@ -22,7 +22,6 @@ export class SearchComponent   {
   
   i : number = 1;
   
-
 constructor(private proservice:SearchService)
 {
 }

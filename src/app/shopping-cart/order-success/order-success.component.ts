@@ -11,6 +11,7 @@ export class OrderSuccessComponent implements OnInit {
 
   cartproducts : ArrayType[] = [];
   scart = new shoppingCart();
+  
   constructor(private proservice: SearchService) { }
 
   ngOnInit(): void {
@@ -20,5 +21,7 @@ export class OrderSuccessComponent implements OnInit {
       this.scart.productPrice += this.cartproducts[index].productPrice;
     }
   }
+
+  
 
 }
