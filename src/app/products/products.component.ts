@@ -9,29 +9,27 @@ export class ProductsComponent  {
 
   searchText: any;  
   products: any[] = [
-    {productName:"Greens",
+    {productName:"Biryani",
   productCat : "z",
   productPrice : 3,
   productImg :"/assets/images/s.png"},
-  {productName:"Avacado",
+  {productName:"Veggie Bowl",
   productCat : "y",
   productPrice : 7,
-  productImg :"/assets/images/s.png"},
-  {productName:"Bread",
+  productImg :"/assets/images/vegetarian-means.jpg"},
+  {productName:"Cereals",
   productCat : "x",
   productPrice : 9,
   productImg :"/assets/images/s.png"},
-  {productName:"Cereals",
+  {productName:"Noodles",
   productCat : "a",
   productPrice : 9,
   productImg :"/assets/images/s.png"},
-  {productName:"Dairy Products",
+  {productName:"Fried Rice",
   productCat : "b",
   productPrice : 9,
   productImg :"/assets/images/s.png"},
-
   ]
-  
-  
+    
 
 }
