@@ -18,7 +18,7 @@
     </div>    
       <div class="form-group"> 
         <label for="password" class="lead" style="font-family: Hey October;">Enter Password : </label>
-        <input [(ngModel)] = userlog.password #passwordVar = "ngModel" name="password"  id = "password" type="password" minlength="8" class="form-control" required
+        <input [(ngModel)] = userlog.password #passwordVar = "ngModel" name="password"  id="password" type="password" minlength="8" class="form-control" required
         [ngClass] = "{'is-invalid' : (passwordVar.touched || passwordVar.dirty) && !passwordVar.valid}" />
         <span class="invalid-feedback">
             <span *ngIf = passwordVar.errors>
