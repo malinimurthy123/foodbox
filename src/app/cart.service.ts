@@ -1,5 +1,5 @@
-mport { HttpClient } from '@angular/common/http';
-import { Cart } from './../model/cart';
+import { HttpClient } from '@angular/common/http';
+import { Cart } from './model/cart';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 
@@ -9,7 +9,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class CartService {
   public cartItemList:any=[]
   public productList = new BehaviorSubject<any>([]);
-  public cart:Cart;
+  
   private baseURL = "http://localhost:8084/carts";
   constructor(private httpClient:HttpClient) { }
 

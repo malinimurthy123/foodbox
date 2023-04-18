@@ -1,4 +1,4 @@
-import { Purchase } from 'src/app/model/purchase';
+import { Purchase } from './model/purchase';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';

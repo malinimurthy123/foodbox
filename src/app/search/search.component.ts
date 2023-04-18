@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { productForm } from '../admin/product-form/product-form';
+import { productform } from '../admin/product-form/product-form';
 import { SearchService } from 'src/app/search.service';
 import { ArrayType } from "src/app/search.service";
 import { searchProduct } from './search';

@@ -1,4 +1,4 @@
-export class productForm {
+export class productform {
     [x: string]: any;
     constructor(
         public productId = 0,

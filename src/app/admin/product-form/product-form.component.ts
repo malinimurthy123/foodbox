@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ArrayType, SearchService } from 'src/app/search.service';
-import { productForm } from './product-form';
+import { productform } from './product-form';
 
 @Component({
   selector: 'app-product-form',
@@ -10,7 +10,7 @@ import { productForm } from './product-form';
 })
 export class ProductFormComponent  {
 
-  productform = new productForm();
+  productform = new productform();
   products1 : ArrayType[] = [];
   constructor(private proservice : SearchService)
   {
@@ -32,6 +32,5 @@ export class ProductFormComponent  {
     this.onAdd(NewProduct);
     
     
-
   }
 }
