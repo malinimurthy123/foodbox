@@ -3,7 +3,6 @@ import { LogService } from 'src/app/log.service';
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/product.service';
 import { Product } from 'src/app/model/product';
-import Sort 
 import { FormBuilder,FormGroup } from '@angular/forms';
 
 @Component({
