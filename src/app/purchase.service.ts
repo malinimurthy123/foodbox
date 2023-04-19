@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PurchaseService {
-  private baseURL="http://localhost:8084/purchase";
+  private baseURL="http://localhost:8084/purchases";
 
   constructor( private httpClient:HttpClient) { }
 
