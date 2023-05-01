@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ArrayType, SearchService } from 'src/app/search.service';
 import { shoppingCart } from '../shoppingcart';
 
+
 @Component({
   selector: 'app-order-success',
   templateUrl: './order-success.component.html',

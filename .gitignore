@@ -3,6 +3,8 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+!/foodbox/foodbox/gradle
+!/foodbox/foodbox/angular
 
 ### STS ###
 .apt_generated
