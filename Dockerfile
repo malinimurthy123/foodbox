@@ -1,19 +1,14 @@
-FROM node:14.17
-ARG WORK_DIR=/frontend
-ENV PATH ${WORK_DIR}/node_modules/.bin:$path
+FROM node:18-alpine
+ENV NODE_ENV=production
 
-RUN mkdir ${WORK_DIR}
-COPY package.json ${WORK_DIR}
-COPY package-lock.json ${WORK_DIR}
+WORKDIR /app
 
-RUN npm install @angular/cli
-RUN npm install
+COPY ["package.json", "package-lock.json*", "./"]
 
-COPY . ${WORK_DIR}
+RUN npm install --production
 
+COPY . .
+
+CMD ["node", "server.js"]
 EXPOSE 4200
-
-CMD ng serve --host 0.0.0.0
-
-
-
+# COPY --from=node /app/dist/food-box-front-end  /usr/share/nginx/html
